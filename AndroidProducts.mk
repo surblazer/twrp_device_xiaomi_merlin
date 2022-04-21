@@ -17,8 +17,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_merlin.mk
+    $(LOCAL_DIR)/twrp_merlin.mk
 
 COMMON_LUNCH_CHOICES := \
-	omni_merlin-userdebug \
-	omni_merlin-eng
+	twrp_merlin-userdebug \
+	twrp_merlin-eng
