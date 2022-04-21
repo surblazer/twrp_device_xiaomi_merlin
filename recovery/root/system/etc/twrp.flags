@@ -5,11 +5,6 @@
 # Currently we dont have e2fsck compiled. So fs check would failed.
 
 # <mount_point>  <fstype>  <device>        <device2>                  <flags>
-system		/system			ext4		logical
-vendor		/vendor			ext4		display="Vendor";logical
-product		/product		ext4		display="Product";logical
-
-/data             ext4     /dev/block/platform/bootdevice/by-name/userdata     flags=fileencryption=aes-256-xts
 /cache            ext4     /dev/block/platform/bootdevice/by-name/cache        flags=backup=1;wipeingui;wipeduringfactoryreset
 /boot             emmc     /dev/block/platform/bootdevice/by-name/boot         flags=backup=1;flashimg=1
 /dtbo             emmc     /dev/block/platform/bootdevice/by-name/dtbo         flags=display="dtbo";backup=1;flashimg=1
