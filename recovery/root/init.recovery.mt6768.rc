@@ -7,6 +7,9 @@ on fs
     start hwservicemanager
     start servicemanager
 
+on early-init
+    start adbd
+
 service hwservicemanager /system/bin/hwservicemanager
     user root
     group root readproc
